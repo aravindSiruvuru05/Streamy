@@ -1,5 +1,5 @@
 import React from 'react';
-import { Field, reduxForm, Form } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 import { createStream } from '../../actions';
 import { connect } from 'react-redux';
 
