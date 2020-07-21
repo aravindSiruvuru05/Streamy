@@ -1,3 +1,16 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "f",
+      "description": "s",
+      "userId": "114904856613549958212",
+      "id": 1
+    },
+    {
+      "title": "hfg",
+      "description": "fg",
+      "userId": "114904856613549958212",
+      "id": 2
+    }
+  ]
 }
