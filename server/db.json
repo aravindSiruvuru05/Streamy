@@ -1,22 +1,18 @@
 {
   "streams": [
     {
-      "title": "f",
-      "description": "s",
-      "userId": "114904856613549958212",
-      "id": 1
-    },
-    {
-      "title": "hfg",
-      "description": "fg",
-      "userId": "114904856613549958212",
-      "id": 2
-    },
-    {
-      "title": "hey am right now streaming",
-      "description": "yes here am i",
+      "title": "hi there am streaming right now",
+      "description": "yes am excited",
       "userId": "102530544112483228759",
+      "userName": "aravind siruvuru",
       "id": 3
+    },
+    {
+      "title": "yooo lets hit up",
+      "description": "sharp 6 pm IST",
+      "userId": "112178474459884993942",
+      "userName": "111 597",
+      "id": 4
     }
   ]
 }
