@@ -2,7 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchStream } from '../../actions';
 import flv from 'flv.js';
-
+//flv is about downloading that video stream and converting into some file that can be palyed in html video tag  a bit like   .. 
+// it is bit like axios reaches to some remote server get some data and server up our application
 class StreamShow extends React.Component {
 
     constructor(props){
@@ -12,7 +13,29 @@ class StreamShow extends React.Component {
     }
 
     componentDidMount(){
-        this.props.fetchStream(this.props.match.params.id);
+        const { id } = this.props.match.params;
+        this.props.fetchStream(id);
+        this.buildPlayer();
+    }
+
+    componentDidUpdate(){
+        this.buildPlayer();
+    }
+
+    buildPlayer(){
+        const { id } = this.props.match.params;
+
+        if(this.player || !this.props.stream){
+            return;
+        }
+
+        this.player = flv.createPlayer({
+            type:'flv',
+            url: `http://localhost:8000/live/${id}.flv`
+        });
+        // console.log(this.videoRef.current);
+        this.player.attachMediaElement(this.videoRef.current);
+        this.player.load();
     }
     
     render(){
